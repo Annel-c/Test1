@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+header{
+    /* Cambio color de fondo*/
+    background: red;
+    /*Seteo el alto de la columna*/
+    height: 100px;
+    /*Seteo ancho de la columna*/
+    width: 100%;
+    /*Seteo la alineación del texto escrito*/
+    text-align: center;
+    /*Alineación vertical, (centrada igual que height)*/
+    line-height: 100px;
+    /*cambio color al texto*/
+    color: white;
+    /*Agrego un borde solo inferior*/
+    border-bottom: 3px dashed black;
+}
+
+nav{
+    /*Color de fondo del nav*/
+    background: lightblue;
+    /*set altura*/
+    height: 50px;
+    /*agrego un borde inferior*/
+    border-bottom: 3px dashed black;
+}
+
+/*trabajo con el menú de navegación
+Selecciono los elementos li de la lista desordenada*/
+
+nav ul li {
+    /*Hago flotar los elementos a la izquierda*/
+    float: left;
+    /*quito los estilos*/
+    list-style: none;
+    /*agrego margen externo*/
+    margin: 10px;
+    /*set alineación vertical*/
+    line-height: 30px;
+}
+
+/*quito el subrayado de las palabras del nav*/
+nav ul li a{
+    text-decoration: none;
+}
+
+/*selecciono la clase .clearfix para inmobilizar los elementos flotantes superiores*/
+.clearfix{
+    /*dejo anclado por debajo a los elementos consiguientes*/
+    clear: both;
+}
+
+/*Selecciono el ID content del dom*/
+#content{
+    /*hago flotar a la izquierda los elementos*/
+    float: left;
+    /*Seteo un ancho a la columna*/
+    width: calc(80% - 80px);
+    /*doy color de fondo*/
+    background: green;
+    /*seteo altura minima*/
+    min-height: 420px;
+    /*Agrego margen interno a los 4 lados de 40px*/
+    padding: 40px;
+}
+
+/*selecciono la clase article (se selecciona con .)*/
+.article{
+    /*Doy color a la letra*/
+    color: white;
+    /*margen externo superior*/
+    margin-top: 15px;
+    /*margen externo inferior*/
+    margin-bottom: 15px;
+    /*margen interno*/
+    padding-bottom: 10px;
+    /*borde inferior solido y color claro*/
+    border-bottom: 1px solid #eee;
+}
+
+/*selecciono el primer objeto de la clase article*/
+.article:first-child{
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+/*selecciono los h2 dentro de article*/
+.article h2{
+    font-size: 25px;
+}
+
+/*selecciono la etiqueta aside*/
+aside{
+    /*hago flotar a la izquierda los elementos*/
+    float: left;
+    /*seteo ancho restante al objeto anterior para llegar a la totalidad*/
+    /*tengo en cuenta reservar 20px para el padding anterior*/
+    width: calc(20% - 20px);
+    /*color de fondo*/
+    background: orange;
+    /*altura minima*/
+    min-height: 480px;
+    /*agrego margeninterno de 10px a la izquierda*/
+    padding-left: 10px;
+    /*agrego margeninterno de 10px a la derecha*/
+    padding-right: 10px;
+    /*agrego margen interno y suiperior de 20px*/
+    padding-top: 20px;
+}
+
+/*selecciono la etiqueta de pie de página*/
+
+footer{
+    /*color de fondo*/
+    background: black;
+    /*color de texto*/
+    color: white;
+    /*centramos el texto escrito*/
+    text-align: center;
+    /*set el alto*/
+    height: 50px;
+    /*seteo la alineación vertical, igualo el height*/
+    line-height: 50px;
+}
